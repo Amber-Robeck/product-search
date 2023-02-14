@@ -16,12 +16,42 @@
     </header>
 
     <nav id="main">
-        <ul>
-            <li class="logo"><a href="#">ProductSearch</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="./assets/html/product.html">Products</a></li>
-            <li><a href="#">Locations</a></li>
+        <div class="dropdownBackground">
+            <span class="arrow"></span>
+        </div>
+        <ul class="container">
+            <li class="logo"><a class="logo-a" href="#">ProductSearch</a></li>
+            <li class="trigger">
+                <a href="./assets/html/about.html">About</a>
+                <div class="dropdown dropdown1">
+                    <div class="about">
+                        <img src="https://via.placeholder.com/150">
+                        <a href="./assets/html/about.html">Helping you find the products you need when you need them</a>
+                    </div>
+                </div>
+            </li>
+            <li class="trigger">
+                <a href="./assets/html/product.html">Products</a>
+                <ul class="dropdown products trigger">
+                    <li>
+                        <span class="code">Warehouse search</span>
+                        <a href="./assets/html/product.html">Warehouse search</a>
+                    </li>
+                    <li>
+                        <span class="code">Add new item</span>
+                        <a href="./assets/html/product.html">Add new item</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="trigger">
+                <a href="#">Locations</a>
+                <ul class="dropdown dropdown3 trigger">
+                    <li><a class="button" target="_blank" href="http://google.com">Minneapolis</a></li>
+                    <li><a class="button" target="_blank" href="http://google.com">St. Paul</a></li>
+                    <li><a class="button" target="_blank" href="http://google.com">St. Cloud</a></li>
+                    <li><a class="button" target="_blank" href="http://google.com">Duluth</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
